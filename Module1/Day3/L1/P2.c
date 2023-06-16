@@ -2,13 +2,13 @@
 
 void print_bits(unsigned int num) {
     int i;
-    unsigned int mask = 1 << 31; // Start with the most significant bit
+    unsigned int mask = 1 << 31;
 
     for (i = 0; i < 32; i++) {
-        unsigned int bit = (num & mask) >> 31; // Extract the current bit
+        unsigned int bit = (num & mask) >> 31;
         printf("%u", bit);
         
-        num <<= 1; // Shift the number left by 1
+        num <<= 1; 
     }
 
     printf("\n");
